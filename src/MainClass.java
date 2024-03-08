@@ -4,7 +4,6 @@ public class MainClass {
 
 	public static void displayMenu() {
 		System.out.println("**** MENU ****");
-		// System.out.println("1. Select ALL student from student table");
 		System.out.println("1. SELECT All students from student table");
 		System.out.println("2. SELECT a student from student table");
 		System.out.println("3. INSERT into student table");
@@ -33,13 +32,13 @@ public class MainClass {
 					sqlqueries.InsertQuery.insertWithPreparedStatement(scan);
 					break;
 				case 4:
-					System.out.println("Yet to be implemented...");
+					sqlqueries.UpdateQuery.updateStudentInfo(scan, "studentname");
 					break;
 				case 5:
-					System.out.println("Yet to be implemented...");
+					sqlqueries.UpdateQuery.updateStudentInfo(scan, "email");
 					break;
 				case 6:
-					System.out.println("Yet to be implemented...");
+					sqlqueries.UpdateQuery.updateStudentInfo(scan, "age");
 					break;
 				case 7:
 					System.out.println("Yet to be implemented...");
