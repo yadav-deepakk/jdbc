@@ -41,7 +41,7 @@ public class MainClass {
 					sqlqueries.UpdateQuery.updateStudentInfo(scan, "age");
 					break;
 				case 7:
-					System.out.println("Yet to be implemented...");
+					sqlqueries.DeleteQuery.deleteStudentById(scan);
 					break;
 				case 8:
 					System.out.println("*** Thanks for using the JDBC application ****");
